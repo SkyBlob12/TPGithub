@@ -1,5 +1,3 @@
-import unittest
-
 class SimpleMath:
     @staticmethod
     def addition(a, b):

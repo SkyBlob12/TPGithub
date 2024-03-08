@@ -1,3 +1,5 @@
+import unittest
+
 class TestSimpleMath(unittest.TestCase):
     def test_addition(self):
         # Test case 1
