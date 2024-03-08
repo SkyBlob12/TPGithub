@@ -1,4 +1,5 @@
 import unittest
+from maths import SimpleMath
 
 class TestSimpleMath(unittest.TestCase):
     def test_addition(self):
