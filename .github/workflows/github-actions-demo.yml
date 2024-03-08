@@ -15,5 +15,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Downloading dependencies
+        run: python -m pip install pylint
+
       - name: Testing simple_math.py
         run: python -m unittest simple_math.py
+
+      - name: Checking for programmatic and stylistic error in code.
+        run: python -m pylint simple_math.py
